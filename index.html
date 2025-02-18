@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>ROM-CIMPC</title>
+  <link rel="icon" type="image/x-icon" href="static/images/hero.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,21 +52,22 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-3 publication-title">Reduced-Order Model Guided Contact-Implicit Model Predictive Control for Humanoid Locomotion</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://estebanengineering.com/" target="_blank">Sergio A. Esteban</a>, </span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://vincekurtz.github.io/" target="_blank">Vince Kurtz</a>, </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                    <a href="https://www.ghansah.org/" target="_blank">Adrian B. Ghansah</a>, and</span>
+                    <span class="author-block">
+                      <a class="author-link" href="http://ames.caltech.edu/" target="_blank">Aaron D. Ames</a>
+                    </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">California Institute of Technology<br>AMBER Lab</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -127,14 +128,12 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Project Overview</h2>
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/ICRA25_4163_VI_i.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
     </div>
   </div>
 </section>
@@ -148,7 +147,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Humanoid robots have great potential for real-world applications due to their ability to operate in environments built for humans, but their deployment is hindered by the challenge of controlling their underlying high-dimensional nonlinear hybrid dynamics. While reduced-order models like the Hybrid Linear Inverted Pendulum (HLIP) are simple and computationally efficient, they lose whole-body expressiveness. Meanwhile, recent advances in Contact-Implicit Model Predictive Control (CI-MPC) enable robots to plan through multiple hybrid contact modes, but remain vulnerable to local minima and require significant tuning. We propose a control framework that combines the strengths of HLIP and CI-MPC. The reduced-order model generates a nominal gait, while CI-MPC manages the whole-body dynamics and modifies the contact schedule as needed. We demonstrate the effectiveness of this approach in simulation with a novel 24 degree-of-freedom humanoid robot: Achilles. Our proposed framework achieves rough terrain walking, disturbance recovery, robustness under model and state uncertainty, and allows the robot to interact with obstacles in the environment, all while running online in real-time at 50 Hz.
           </p>
         </div>
       </div>
@@ -275,7 +274,7 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <section class="section" id="Citation">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>

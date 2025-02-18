@@ -133,5 +133,18 @@ body {
   font-size: smaller;
 }
 
+/* Added these for the author block */
 
+/* add spacing between everyone's names */
+.author-block {
+  margin-right: 5px; 
+}
 
+/* caltech orange for our names */
+.author-block a {
+  color: #FF6C0C !important;;
+  text-decoration: none !important;;
+}
+.author-block a:hover {
+  text-decoration: underline !important;;
+}
