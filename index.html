@@ -84,28 +84,6 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                      </a>
-                    </span>
-
-                    <!-- Github link -->
-                    <span class="link-block">
-                      <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                      <i class="fab fa-github"></i>
-                      </span>
-                      <span>Code</span>
-                      </a>
-                    </span>
-
                     <!-- ArXiv abstract Link -->
                     <span class="link-block">
                       <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
@@ -133,8 +111,7 @@
       <h2 class="title is-3 has-text-centered">Project Overview</h2>
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/ICRA25_4163_VI_i.mp4"
-        type="video/mp4">
+        <source src="./static/videos/ICRA25_4163_VI_i.mp4" type="video/mp4">
       </video>
     </div>
   </div>
@@ -166,9 +143,8 @@
       <div class="columns is-centered">
           <div class="column">
             <div class="content">
-                <h2 class="title is-3">Control Architecture</h2>
+                <h2 class="title is-3">Control Approach</h2>
             </div>
-
             <figure class="image is-flex is-justify-content-center">
                 <img src="./static/images/control_architecture.png" alt="Demo Task" style="max-width: 100%;">
             </figure>
@@ -186,26 +162,41 @@
       <div class="columns is-centered">
           <div class="column">
             <div class="content">
-                <h2 class="title is-3">ROM Guided CIMPC Enables Diverse Behavior</h2>
+                <h2 class="title is-3">ROM Guided CI-MPC Enables Diverse Behavior</h2>
             </div>
                 <div class="content">
                   <h3 class="title is-4">Natural Walking</h3>
-                  <p>The normal walking video and the orbit plots</p>
-                </div>
-                <div class="content">
-                  <h3 class="title is-4">Multi-Contact Walking</h3>
+                  <video class="responsive-video" poster="" id="tree" autoplay controls muted loop>
+                    <source src="./static/videos/website_nominal_walking.mp4" type="video/mp4">
+                  </video>
                   <p>All the walking gaits from my recordings</p>
                 </div>
                 <div class="content">
+                  <h3 class="title is-4">Multi-Contact Walking</h3>
+                  <video class="responsive-video" poster="" id="tree" autoplay controls muted loop>
+                    <source src="./static/videos/website_planar_walking.mp4" type="video/mp4">
+                  </video>
+                  <p>Talk about how it's doing multi-contact walking</p>
+                </div>
+                <div class="content">
                   <h3 class="title is-4">Disturbance Recovery</h3>
+                  <video class="responsive-video" poster="" id="tree" autoplay controls muted loop>
+                    <source src="./static/videos/website_disturbances.mp4" type="video/mp4">
+                  </video>
                   <p>All the Disturbance Recovery Tests.</p>
                 </div>
                 <div class="content">
                   <h3 class="title is-4">Robust Locomotion</h3>
+                  <video class="responsive-video" poster="" id="tree" autoplay controls muted loop>
+                    <source src="./static/videos/rough_terrain.mp4" type="video/mp4">
+                  </video>
                   <p>Video of robot wlaking over the rough terrain.</p>
                 </div>
                 <div class="content">
-                  <h3 class="title is-4">Highly Dynamic Motion</h3>
+                  <h3 class="title is-4">Highly Dynamic Whole-body Coordination</h3>
+                  <video class="responsive-video" poster="" id="tree" autoplay controls muted loop>
+                    <source src="./static/videos/website_drop.mp4" type="video/mp4">
+                  </video>
                   <p>Video of the robot falling from 1 meter.</p>
                 </div>
           </div>

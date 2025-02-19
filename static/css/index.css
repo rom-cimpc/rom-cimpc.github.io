@@ -133,7 +133,7 @@ body {
   font-size: smaller;
 }
 
-/* Added these for the author block */
+/* Stuff added by Sergio */
 
 /* add spacing between everyone's names */
 .author-block {
@@ -147,4 +147,14 @@ body {
 }
 .author-block a:hover {
   text-decoration: underline !important;;
+}
+
+/* videos that are smaller in size and with padding above and below */
+.responsive-video {
+  width: 80%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the video */
+  margin-top: 2em; /* Add one line space above the video */
+  margin-bottom: 2em; /* Add one line space below the video */
 }
