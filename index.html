@@ -163,7 +163,13 @@
                   <video class="responsive-video" poster="" id="tree" autoplay controls muted loop>
                     <source src="./static/videos/website_nominal_walking.mp4" type="video/mp4">
                   </video>
-                  <p>All the walking gaits from my recordings</p>
+                  <p><strong>Our proposed method enables natural walking. </strong>
+                      Since HLIP by itself works with a fixed contact schedule and stability depends on step-to-step
+                      dynamics, we get periodic marching even at zero velocity. Additionally, the HLIP natively does not encode any motion for the arms.
+                      HLIP fails at low height walking. CI-MPC by itself yields foot dragging and at higher velocities, converges to unpredictable periodic behavior.
+                      Our proposed method however, is able to walk naturally at a range of velocities and heights. integrating the HLIP with CI-MPC allows us to
+                      regulate the unpredictable behavior of CI-MPC while benefiting from the HLIP's robust step-to-step stability via foot placement.</p>
+                  </p>
                 </div>
 
                 <div class="content">
@@ -171,7 +177,10 @@
                   <video class="responsive-video" poster="" id="tree" autoplay controls muted loop>
                     <source src="./static/videos/website_planar_walking.mp4" type="video/mp4">
                   </video>
-                  <p>Talk about how it's doing multi-contact walking</p>
+                  <p><strong>Our proposed method enables multi-contact walking. </strong>
+                      HLIP by itself is limited to a single contact mode for each foot since it only considers point feet. The flexibility of CI-MPC allows 
+                      exploration of different contact modes. By leveraging this flexibility, gaits produced by our method considers contact sequences for each collision geometry.
+                  </p>
                 </div>
 
                 <!-- Disturbance Recovery -->
@@ -180,7 +189,12 @@
                   <video class="responsive-video" poster="" id="tree" autoplay controls muted loop>
                     <source src="./static/videos/website_disturbances.mp4" type="video/mp4">
                   </video>
-                  <p>All the Disturbance Recovery Tests.</p>
+                  <p><strong>Our proposed method improves disturbance recovery.</strong>
+                      We consider recovery to pushes in directions in the horizontal plane of maginute 50 N. Our proposed method recovers from these disturbances by adjusting
+                      the contact schedule to maintain stability. While tracking a velocity command, the robot deviates from a nominal orbit and returns to the orbit
+                      after recovery from the disturbance. Since CI-MPC can reason about multiple contact modes, it can adjust the contact schedule
+                      of the hands to interact with the environment (i.e., the wall). 
+                  </p>
                 </div>
                 
                 <!-- Rough Terrain -->
@@ -189,7 +203,10 @@
                   <video class="responsive-video" poster="" id="tree" autoplay controls muted loop>
                     <source src="./static/videos/rough_terrain.mp4" type="video/mp4">
                   </video>
-                  <p>Video of robot wlaking over the rough terrain.</p>
+                  <p><strong>Robustness over unknown terrain.</strong>
+                      Foot placement from the HLIP allows for stability of the robot and the whole-body consideration from the CI-MPC allows for deformation of the
+                      feet over the unknown terrain and arm swinging to help maintain balance.
+                  </p>
                 </div>
                 
                 <!-- Drop from high place -->
@@ -198,7 +215,11 @@
                   <video class="responsive-video" poster="" id="tree" autoplay controls muted loop>
                     <source src="./static/videos/website_drop.mp4" type="video/mp4">
                   </video>
-                  <p>Video of the robot falling from 1 meter.</p>
+                  <p><strong>Whole-body coordination is observed in a highly dynamic setting.</strong>
+                      We drop the robot from a height of 1.0 m at a forward velocity of 1.0 m/s. The robot ccordinates its whole-body by swinging its arms
+                      and bending its knees to absorb the impact. Although there is little to no influnce from the HLIP, CI-MPC is leveraged for its whole-body
+                      coordination capabilities and decides the landing times of the feet.
+                  </p>
                 </div>
 
           </div>
