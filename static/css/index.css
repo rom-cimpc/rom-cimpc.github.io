@@ -133,7 +133,13 @@ body {
   font-size: smaller;
 }
 
-/* Stuff added by Sergio */
+/* ------------------- Stuff added by Sergio ------------------- */
+
+/* Add horizontal space between the buttons */
+.link-block {
+  display: inline-block;
+  margin: 0 15px; 
+}
 
 /* add spacing between everyone's names */
 .author-block {
@@ -151,10 +157,11 @@ body {
 
 /* videos that are smaller in size and with padding above and below */
 .responsive-video {
-  width: 80%;
+  width: 75%;
   height: auto; /* Maintain aspect ratio */
   display: block;
   margin: 0 auto; /* Center the video */
   margin-top: 2em; /* Add one line space above the video */
   margin-bottom: 2em; /* Add one line space below the video */
 }
+
